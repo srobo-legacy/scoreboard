@@ -1,0 +1,20 @@
+This is the Student Robotics rotating scorebaord for the competition day.
+It shows:
+ * Scehdule
+ * Socres
+ * Upcoming matches
+
+It interacts with the same database that the competition radio scripts do in
+order to present the latest data at all times.
+
+It is a PHP and Mochikit web application.
+
+You should create a file called pass.php in the info folder with the database
+information in. It should use this template:
+
+<?php
+$mysql_details = array('host' => 'db-host',
+		       'user' => 'db-user',
+		   'password' => 'db-password' );
+?>
+
