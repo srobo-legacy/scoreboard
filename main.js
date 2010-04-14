@@ -165,7 +165,6 @@ function upcoming_matches_cb(slide,res)
 
 		r.push( TD({"class":"matchNum"}, match.number) );
 		r.push( TD({"class":"matchTime"}, match.time) );
-		r.push( TD({"class":"matchType"}, match.matchType ? "Squirrel" : "Golf") );
 		
 		for( var j = 0; j < 4; j++ )
 			r.push( TD({"class":"matchTeam"}, match.teams[j]) );
@@ -186,7 +185,6 @@ function upcoming_matches_cb(slide,res)
 			      TR( {"class":"header"},
 				  [ TH( {"id":"matchMatchHeader"}, "Match" ), 
 				    TH( {"id":"matchTimeHeader"}, "Time" ), 
-				    TH( {"id":"matchTypeHeader"}, "Type"),
 					TH( {"class":"colourHeader"}, "Red" ), 
 				    TH( {"class":"colourHeader"}, "Green" ), 
 				    TH( {"class":"colourHeader"}, "Blue" ), 
