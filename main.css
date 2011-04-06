@@ -142,3 +142,31 @@ width:*;
  text-decoration:none;
  color:silver;
 }
+
+#nowandnext {
+	position:absolute;
+	left:0px;
+	bottom:15px;
+	width:100%;
+}
+
+#nowandnext #now {
+	float:left;
+	margin-left:15px;
+}
+
+#nowandnext #next {
+	float:right;
+	margin-right:15px;
+}
+
+#nowandnext .nntitle {
+	font-weight:bolder;
+
+}
+#nowandnext .now, #nowandnext .next {
+	color:white;
+	background-color:rgb(13,31,97);
+	padding:5px;
+	padding-bottom:2px;
+}
