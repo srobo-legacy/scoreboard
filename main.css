@@ -10,6 +10,7 @@ body
 {
  width: 100%;
  text-align: center;
+ margin-bottom:20px;
 }
 
 #header table {
@@ -17,8 +18,7 @@ body
 }
 
 #logocell {
- text-align: center;
- width: 150px;
+	float:left;
 }
 #logocell img
 {
@@ -32,15 +32,19 @@ body
 }
 
 #time {
- font-size: 180%;
+ font-size: 1.5em;
  width: 6ex;
  padding-right: 10px;
+ padding-top:30px;
  text-align: right;
+ float:right;
 }
 
 #titlecell {
- font-size: 180%;
+ font-size: 1.8em;
  text-align: center;
+ clear:both;
+ padding-top:10px;
 }
 
 /* Styles of things within pages */
