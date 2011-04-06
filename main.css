@@ -131,3 +131,13 @@ width:*;
  text-align: left;
  border: none;
 }
+
+.control {
+ font-size:0.7em;
+ color:silver;
+}
+
+.control a {
+ text-decoration:none;
+ color:silver;
+}
