@@ -301,8 +301,7 @@ function set_next_cell(num, val){
 
 function now_next_cb(res){
 
-	//var resList = MochiKit.Async.evalJSONRequest(res);
-	var resList = {"now": [11, 22, 33, 44], "next": [55, 66, 77, 88]};
+	var resList = MochiKit.Async.evalJSONRequest(res);
 
 	for (var i=0; i<resList.now.length; i++)
 		set_now_cell(i, resList.now[i]);
