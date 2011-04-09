@@ -5,7 +5,7 @@ import csv
 
 COMP_DATE = datetime( year = 2011,
                       month = 4,
-                      day = 9 )
+                      day = 10 )
 
 if len(sys.argv) != 2:
     print "Usage: schedule-to-sql SCHEDULER_DATA OUTPUT"
