@@ -5,7 +5,7 @@ import csv
 
 COMP_DATE = datetime( year = 2011,
                       month = 4,
-                      day = 10 )
+                      day = 9 )
 
 if len(sys.argv) != 2:
     print "Usage: schedule-to-sql SCHEDULER_DATA OUTPUT"
@@ -28,7 +28,7 @@ for row in r:
                   hour = hours, minute = mins )
 
     f = ( num, time.mktime( t.timetuple() ) ) + tuple(teams)
-    print """INSERT INTO matches SET number = %i, time = %i, red = %i, blue = %i, green = %i, yellow = %i;""" % f
+    print """INSERT INTO matches SET number = %i, time = %i, red = %i, green = %i, blue = %i, yellow = %i;""" % f
 
     # print t
     # print 
