@@ -94,6 +94,7 @@ function startTimer()
 {
 	sTimeOut = setTimeout("changeSlide();", 3000);
 	nowNextTimeout = setTimeout("updateNowNext();", 15000);
+	updateNowNext();
 }
 
 // Update the clock
