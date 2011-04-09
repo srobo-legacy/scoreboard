@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+import os, sys, time
+from datetime import datetime
+import csv
+
+COMP_DATE = datetime( year = 2011,
+                      month = 4,
+                      day = 10 )
+
+if len(sys.argv) != 2:
+    print "Usage: schedule-to-sql SCHEDULER_DATA OUTPUT"
+    exit(1)
+
+SCHED_DATA = sys.argv[1]
+
+r = csv.reader( open( SCHED_DATA, "r" ) )
+
+num = 0
+
+for row in r:
+    time_str = row[0]
+    teams = [int(x) for x in row[1:]]
+    hours, mins = [int(x) for x in time_str.split(":")]
+
+    c = COMP_DATE
+    t = datetime( c.year, month = c.month,
+                  day = c.day,
+                  hour = hours, minute = mins )
+
+    f = ( num, time.mktime( t.timetuple() ) ) + tuple(teams)
+    print """INSERT INTO matches SET number = %i, time = %i, red = %i, blue = %i, green = %i, yellow = %i;""" % f
+
+    # print t
+    # print 
+
+    num += 1
