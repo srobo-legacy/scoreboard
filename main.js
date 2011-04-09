@@ -38,6 +38,8 @@ function startShow()
 		document.getElementById("refresh").style.display = "";
 	}
 
+	setTimeout("window.location.reload();", 60000);
+
 }
 
 // Switch to new slide
