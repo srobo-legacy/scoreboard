@@ -208,6 +208,19 @@ function scoresUp(slide)
 	d.addErrback(scores_err);
 }
 
+function knockout_diagramUp(slide)
+{
+	var img = document.getElementById("knockoutsImg");
+	var src = img.src;
+	var pos = src.indexOf('?');
+	if (pos >= 0) {
+		src = src.substr(0, pos);
+	}
+	var date = new Date();
+	img.src = src + '?v=' + date.getTime();
+	return false;
+}
+
 function scores_cb(slide,res)
 {
 	var resList = MochiKit.Async.evalJSONRequest(res);
