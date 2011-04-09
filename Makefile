@@ -1,5 +1,5 @@
 knockouts_diagram.png: knockouts_diagram.svg
-	inkscape -A knockouts_diagram.png knockouts_diagram.svg
+	inkscape -e knockouts_diagram.png knockouts_diagram.svg
 
 .PHONY: clean
 
