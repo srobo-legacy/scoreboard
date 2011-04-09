@@ -93,6 +93,7 @@ function changeSlide()
 function startTimer()
 {
 	sTimeOut = setTimeout("changeSlide();", 3000);
+	nowNextTimeout = setTimeout("updateNowNext();", 15000);
 }
 
 // Update the clock
@@ -283,4 +284,42 @@ function scores_cb(slide,res)
 
 function scores_err()
 {
+}
+
+function set_now_next_cell(id, val){
+	var cell = document.getElementById(id);
+	cell.innerHTML = val;
+}
+
+function set_now_cell(num, val){
+	set_now_next_cell("now_" + num, val);
+}
+
+function set_next_cell(num, val){
+	set_now_next_cell("next_" + num, val);
+}
+
+function now_next_cb(res){
+
+	//var resList = MochiKit.Async.evalJSONRequest(res);
+	var resList = {"now": [11, 22, 33, 44], "next": [55, 66, 77, 88]};
+
+	for (var i=0; i<resList.now.length; i++)
+		set_now_cell(i, resList.now[i]);
+
+	for (var i=0; i<resList.next.length; i++)
+		set_next_cell(i, resList.next[i]);
+}
+
+function now_next_err()
+{
+}
+
+function updateNowNext(){
+
+	d = MochiKit.Async.doSimpleXMLHttpRequest( "./info/nownext.php?n=" + n );
+	n++;
+	d.addCallback(now_next_cb);
+	d.addErrback(scores_err);
+
 }
