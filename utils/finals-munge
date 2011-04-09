@@ -24,8 +24,6 @@ if os.path.exists(OUT_SVG):
 shutil.copy( IN_SVG, OUT_SVG )
 
 for n in range(0, len(slots)):
-    print slots[n], inp[n]
-
     subprocess.call( "sed -e 's#>%s</tspan></text>#>%s</tspan></text>#' -i %s" % (slots[n],
                                                                                 inp[n],
                                                                                 OUT_SVG),
