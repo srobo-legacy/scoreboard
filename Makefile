@@ -1,3 +1,5 @@
+all: knockouts_diagram.png
+
 knockouts_diagram.svg: knockouts_template.svg finals.csv
 	./utils/finals-munge finals.csv knockouts_template.svg knockouts_diagram.svg
 
