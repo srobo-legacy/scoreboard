@@ -49,8 +49,8 @@ if( !$res ) die( "Couldn't list matches" );
 $match = mysql_fetch_assoc($res);
 
 if( !$match ) {
-  $now = array( "teams" => array( "x", "x", "x", "x" )  );
-  $next = array( "teams" => array( "x", "x", "x", "x" )  );
+  $now = array( "teams" => array( "\"x\"", "\"x\"", "\"x\"", "\"x\"" )  );
+  $next = array( "teams" => array( "\"x\"", "\"x\"", "\"x\"", "\"x\"" )  );
 } else {
 $now = array( "number" => $match["number"],
 	    "time" => date( "H:i", $match["time"]+($offset*60)),
