@@ -187,10 +187,10 @@ function upcoming_matches_cb(slide,res)
 			      TR( {"class":"header"},
 				  [ TH( {"id":"matchMatchHeader"}, "Match" ), 
 				    TH( {"id":"matchTimeHeader"}, "Time" ), 
-					TH( {"class":"colourHeader"}, "Red" ), 
-				    TH( {"class":"colourHeader"}, "Green" ), 
-				    TH( {"class":"colourHeader"}, "Blue" ), 
-				    TH( {"class":"colourHeader"}, "Yellow" ) ] ) ] ),
+					TH( {"class":"colourHeader"}, "C0" ), 
+				    TH( {"class":"colourHeader"}, "C1" ), 
+				    TH( {"class":"colourHeader"}, "C2" ), 
+				    TH( {"class":"colourHeader"}, "C3" ) ] ) ] ),
 			    TBODY(null,rows ) );
 
 	MochiKit.DOM.swapDOM(mt, t);
