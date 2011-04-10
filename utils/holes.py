@@ -1,6 +1,5 @@
-
 # These teams are fictional
-holes = [2,8,13]
+holes = [2,8,13,15]
 
 MAX_TEAM_N = 19
 
