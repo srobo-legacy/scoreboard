@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os, sys, time
 from datetime import datetime
-import csv
+import csv, holes
 
 COMP_DATE = datetime( year = 2011,
                       month = 4,
@@ -26,6 +26,8 @@ for row in r:
     t = datetime( c.year, month = c.month,
                   day = c.day,
                   hour = hours, minute = mins )
+
+    teams = [ holes.fict_to_real[x] for x in teams ]
 
     f = ( num, time.mktime( t.timetuple() ) ) + tuple(teams)
     print """INSERT INTO matches SET number = %i, time = %i, red = %i, green = %i, blue = %i, yellow = %i;""" % f
