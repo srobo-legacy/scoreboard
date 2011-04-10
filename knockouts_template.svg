@@ -13,8 +13,8 @@
    height="250.63513"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
-   sodipodi:docname="knockouts_diagram.svg">
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="knockouts_template.svg">
   <defs
      id="defs4">
     <marker
@@ -46,9 +46,9 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1275"
-     inkscape:window-height="755"
+     inkscape:window-height="692"
      inkscape:window-x="4"
-     inkscape:window-y="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -171,7 +171,7 @@
          y="141.32227"
          x="136.11034"
          id="tspan2991"
-         sodipodi:role="line">b</tspan></text>
+         sodipodi:role="line">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.4726038px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
