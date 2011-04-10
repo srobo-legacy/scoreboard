@@ -38,7 +38,7 @@ function startShow()
 		document.getElementById("refresh").style.display = "";
 	}
 
-	setTimeout("window.location.reload();", 60000);
+	setTimeout("window.location.reload();", 120000);
 
 }
 
@@ -94,7 +94,7 @@ function changeSlide()
 // Start the timer to the next slide
 function startTimer()
 {
-	sTimeOut = setTimeout("changeSlide();", 3000);
+	sTimeOut = setTimeout("changeSlide();", 5000);
 	nowNextTimeout = setTimeout("updateNowNext();", 15000);
 	updateNowNext();
 }
